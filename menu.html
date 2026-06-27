@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sweet Bakery - Bakery Menu</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <audio id="bg-music" src="mp3/D.mp3" loop></audio>
+
+<script>
+    document.addEventListener('click', function() {
+        var music = document.getElementById('bg-music');
+        if (music.paused) {
+            music.play();
+        }
+    }, { once: true });
+</script>
+    <header class="main-header">
+        <h1 class="header-title">Sweet Bakery</h1>
+        <p class="header-subtitle">Freshly Baked Every Day</p>
+    </header>
+
+    <nav class="nav-bar">
+        <a href="#cakes" class="nav-link">Cakes</a> |
+        <a href="#cookies" class="nav-link">Cookies</a> |
+        <a href="#bread" class="nav-link">Bread</a>
+    </nav>
+
+    <main class="content-wrapper">
+        <h2 class="section-title">Bakery Menu</h2>
+        
+        <section class="menu-container">
+            
+            <article class="product-card">
+                <div class="card-img-box">
+                    <img src="image/choc.jpg" alt="Chocolate Cake" class="product-img">
+                </div>
+                <h3 class="product-title">Chocolate Cake</h3>
+                <p class="product-desc">Rich chocolate cake topped with premium chocolate ganache.</p>
+            </article>
+
+            <article class="product-card">
+                <div class="card-img-box">
+                    <img src="image/straw.jpg" alt="Strawberry Cake" class="product-img">
+                </div>
+                <h3 class="product-title">Strawberry Cake</h3>
+                <p class="product-desc">Soft sponge cake with fresh strawberries and cream.</p>
+            </article>
+
+            <article class="product-card">
+                <div class="card-img-box">
+                    <img src="image/croissant.jpg" alt="Butter Croissant" class="product-img">
+                </div>
+                <h3 class="product-title">Butter Croissant</h3>
+                <p class="product-desc">Crispy French-style croissant baked with premium butter.</p>
+            </article>
+
+            <article class="product-card">
+                <div class="card-img-box">
+                    <img src="image/cookie.jpg" alt="Chocolate Chip Cookie" class="product-img">
+                </div>
+                <h3 class="product-title">Chocolate Chip Cookie</h3>
+                <p class="product-desc">Homemade cookie filled with chocolate chips.</p>
+                <p class="product-price"><span class="price-label">Price:</span> 35 THB</p>
+            </article>
+
+            <article class="product-card">
+                <div class="card-img-box">
+                    <img src="image/garlic.jpg" alt="Garlic Bread" class="product-img">
+                </div>
+                <h3 class="product-title">Garlic Bread</h3>
+                <p class="product-desc">Freshly baked bread with garlic butter topping.</p>
+                <p class="product-price"><span class="price-label">Price:</span> 65 THB</p>
+            </article>
+            
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p class="footer-text">&copy; 2026 Sweet Bakery</p>
+    </footer>
+
+</body>
+</html>
